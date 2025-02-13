@@ -110,7 +110,6 @@ class WidgetsVRouter extends VRouterApp {
     this.debugShowWidgetInspector = false,
     this.debugShowCheckedModeBanner = true,
     this.useInheritedMediaQuery = false,
-    this.inspectorSelectButtonBuilder,
     this.shortcuts,
     this.actions,
     this.restorationScopeId,
@@ -338,7 +337,6 @@ class WidgetsVRouter extends VRouterApp {
   /// This lets [MaterialApp] to use a material button to toggle the inspector
   /// select mode without requiring [WidgetInspector] to depend on the
   /// material package.
-  final InspectorSelectButtonBuilder? inspectorSelectButtonBuilder;
 
   /// {@macro flutter.widgets.widgetsApp.shortcuts}
   /// {@tool snippet}
@@ -484,7 +482,6 @@ class WidgetsVRouterState extends State<WidgetsVRouter>
         debugShowWidgetInspector: widget.debugShowWidgetInspector,
         debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner,
         useInheritedMediaQuery: widget.useInheritedMediaQuery,
-        inspectorSelectButtonBuilder: widget.inspectorSelectButtonBuilder,
         shortcuts: widget.shortcuts,
         actions: widget.actions,
         restorationScopeId: widget.restorationScopeId,
